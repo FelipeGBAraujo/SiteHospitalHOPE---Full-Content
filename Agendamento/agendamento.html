@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendamento.css">
+    <script defer src="app.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    <title>Agendamento</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+           <button class="hamburger"></button> 
+           <ul class="nav-list">
+              <li><a href="../Agendamento/agendamento.html">Agendamento</a></li>
+              <li><a href="../Acompanhamento/acompanhamento.html">Acompanhamento</a></li>
+              <li><a href="../Login/login.html">Sair</a></li>
+            </ul>
+            <a  href="../index.html?status=success" class="logo">Hospital Hope</a>
+        </nav>        
+    </header>
+    <div class="container">
+                <div class="img-box">
+                    <img src="Hospital_Hope-removebg-preview.png">
+                </div>
+                <div class="form-box">
+                    <h2>Agendar</h2> 
+                    <p> Visualizar consulta <a href="../Acompanhamento/acompanhamento.html"> agendada.</a></p>
+
+
+			<form id="form-P" method="POST">
+                <div id="agendar-container">
+                    <div class="select-container">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF aqui:">
+                    </div>
+
+                    <div class="select-container">
+                        <label for="tipo">Tipo:</label>
+                        <select id="tipo" name="tipo">
+                            <option value="1">Consulta</option>
+                            <option value="2">Exame</option>
+                            <option value="3">Retorno</option>
+                        </select>
+                    </div>
+
+                    <div class="select-container">
+                        <label for="especialidade">Especialidade:</label>
+                        <select id="especialidade" name="especialidade">
+                            <option value="1">Pediatria</option>
+
+                            <option value="2">Cardiologia</option>
+
+                            <option value="3">Dermatologia</option>
+
+                            <option value="4">Ginecologia</option>
+
+                            <option value="5">Neurologia</option>
+
+                            <option value="6">Ortopedia</option>
+
+                            <option value="7">Psiquiatria</option>
+
+                            <option value="8">Radiologia</option>
+
+                            <option value="9">Endocrinologia</option>
+
+                            <option value="10">Urologia</option>
+                        </select>
+                    </div>
+
+                    <div class="select-container">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+
+                    <div class="select-container">
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+           			<button type="submit" id="btn-submit">Agendar</button>    
+                    <script src="../js/agendar.js"></script>
+           </div>
+           </form>
+                
+        </div>       
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acompanhamento.css">
+    <script defer src="app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Acompanhamento</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+           <button class="hamburger"></button> 
+           <ul class="nav-list">
+              <li><a href="../Agendamento/agendamento.html">Agendamento</a></li>
+              <li><a href="../Acompanhamento/acompanhamento.html">Acompanhamento</a></li>
+              <li><a href="../Login/login.html">Sair</a></li>
+            </ul>
+            <a  href="/" class="logo">Hospital Hope</a>
+        </nav>        
+    </header>
+    <div class="container">
+        
+        <form class="form" method="post" id="form-P">
+            <label id="nome-t"> Por favor, insira seu Nome: </label>
+            <input type="text" id="nome" placeholder="Insira seu nome aqui:" size="50"> 
+            <button type="submit"> ENVIAR </button>
+        </form>
+
+            <div class="bord" id="bord">
+                <div id="title" class="title"> Nome do Paciente: </div>
+                <div id="tipo" class="tipo"></div>
+                <div id="espe" class="espe"></div>
+                <div id="data" class="data"></div>
+                <div id="hora" class="hora"></div>
+                <div id="status" class="status"></div>
+            </div>
+    </div>    
+
+    <script src="../js/acomp.js"></script>
+</body>
+</html>
